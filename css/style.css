@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+
+:root {
+    --teraborn: #234D8F;
+    --bg-teraborn_1: #101010;
+}
+
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.bg-teraborn {
+    background: var(--teraborn);
+}
+
+.teraborn_navbar {
+    border-bottom: 1px solid #eee;
+}
+
+.no-u_select {
+    user-select: none;
+}
+
+.no-u_drag {
+    -webkit-user-drag: none;
+}
+
+.fullscreen {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.bg-teraborn_1 {
+    background: var(--bg-teraborn_1);
+}
+
+.translate-50 {
+    transform: translateX(50%);
+}
+
+.overflow-x_hidden {
+    overflow-x: hidden;
+}
+
+.z-index_100 {
+    z-index: 100;
+}
+
+.z-index_50 {
+    z-index: 50;
+}
+
+.fs-2_5 {
+    font-size: 2.5rem;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.phrase {
+    position: relative;
+}
+
+.phrase::before {
+    content: '';
+    background: #eee;
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: .3s ease-in-out;
+}
+
+.phrase:hover::before {
+    width: 83%;
+}
+
+.no-resize {
+    resize: none;
+}
