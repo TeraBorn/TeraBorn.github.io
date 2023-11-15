@@ -11,22 +11,27 @@
 </head>
 <body class="overflow-x_hidden">
     <nav class="navbar teraborn_navbar bg-teraborn position-fixed w-100 z-index_100">
-        <div class="container-fluid justify-content-center">
+        <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center gap-2 text-white no-u_select no-u_drag" id="navbar-link">
                 <img src="img/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
-                TeraBorn
             </a>
+            <div class="d-flex gap-4">
+                <a href="#home" class="text-white text-decoration-none">Home</a>
+                <a href="#about" class="text-white text-decoration-none">Sobre Nosotros</a>
+                <a href="#contact" class="text-white text-decoration-none">Contacto</a>
+            </div>
         </div>
     </nav>
     <main>
-        <section class="d-flex flex-column justify-content-center align-items-center fullscreen bg-teraborn_1 text-white">
-            <div class="no-u_select">
-                <h1 class="m-0 fs-2_5 fw-800">
+        <section class="d-flex flex-column justify-content-center align-items-center fullscreen bg-home text-white" id="home">
+            <div class="no-u_select d-flex gap-2 align-items-center">
+                <img src="img/logo.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+                <h1 class="m-0 fs-3_5 fw-800">
                     TeraBorn
                 </h1>
             </div>
         </section>
-        <section class="d-flex flex-column justify-content-center align-items-center fullscreen bg-teraborn_1 text-white">
+        <section class="d-flex flex-column justify-content-center align-items-center fullscreen bg-teraborn_1 text-white" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-12">
@@ -74,20 +79,16 @@
                 </div>
             </div>
         </section>
-        <section class="fullscreen d-flex justify-content-center align-items-center bg-teraborn_1 text-white">
+        <section class="fullscreen d-flex justify-content-center align-items-center bg-teraborn_1 text-white" id="contact">
             <div class="container">
-                <form id="contact-form">
+                <form id="contact-form" method="POST" action="https://formspree.io/f/xnqkydjd">
                     <div class="mb-3">
                         <label for="emailInput" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="subjectInput" class="form-label">Subject</label>
-                        <input type="email" class="form-control" id="subjectInput" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="emailInput" name="email" placeholder="johndoe@example.com">
                     </div>
                     <div class="mb-3">
                         <label for="messageInput" class="form-label">Message</label>
-                        <textarea class="form-control no-resize" id="messageInput" maxlength="1250" rows="6"></textarea>
+                        <textarea class="form-control no-resize" id="messageInput" maxlength="1250" rows="6" name="message" placeholder="Your message here..."></textarea>
                     </div>
                     <div class="mb-3 d-flex justify-content-center">
                         <button type="submit" class="btn bg-teraborn text-white" id="contact-form_btn">Submit</button>

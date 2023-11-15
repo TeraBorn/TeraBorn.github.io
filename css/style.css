@@ -2,7 +2,7 @@
 
 :root {
     --teraborn: #234D8F;
-    --bg-teraborn_1: #101010;
+    --bg-teraborn_1: #000
 }
 
 * {
@@ -58,6 +58,10 @@ body {
     font-size: 2.5rem;
 }
 
+.fs-3_5 {
+    font-size: 3.5rem;
+}
+
 .fw-800 {
     font-weight: 800;
 }
@@ -84,4 +88,12 @@ body {
 
 .no-resize {
     resize: none;
+}
+
+.bg-home {
+    background-image: url(../img/bg_home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
